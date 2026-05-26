@@ -1,0 +1,16 @@
+name: 'build-test'
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-test: # make sure build/ci work properly
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - run: |
+          npm install --legacy-peer-deps
+      - run: |
+          npm run all
