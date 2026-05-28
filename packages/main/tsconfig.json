@@ -4,6 +4,7 @@
     "outDir": "../../lib/main",
     "rootDir": "."
   },
+  "include": ["**/*.ts"],
   "references": [
     { "path": "../common" }
   ]

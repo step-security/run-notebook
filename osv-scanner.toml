@@ -1,0 +1,23 @@
+# Ignored vulnerabilities. undici 5.29.0 is transitively pulled by
+# @actions/core and @actions/github (both at latest); none of the
+# vulnerable undici code paths are exercised by this action.
+
+[[IgnoredVulns]]
+id = "GHSA-2mjp-6q6p-2qxm"
+reason = "undici DoS - not used"
+
+[[IgnoredVulns]]
+id = "GHSA-4992-7rv2-5pvq"
+reason = "undici ReDoS - not used"
+
+[[IgnoredVulns]]
+id = "GHSA-g9mf-h72j-4rw9"
+reason = "undici header forgery - not used"
+
+[[IgnoredVulns]]
+id = "GHSA-v9p9-hfj2-hcw8"
+reason = "undici cookie leak - not used"
+
+[[IgnoredVulns]]
+id = "GHSA-vrm6-8vpv-qv8q"
+reason = "undici use-after-free - not used"
