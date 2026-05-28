@@ -4,6 +4,7 @@
     "outDir": "../../lib/post",
     "rootDir": "."
   },
+  "include": ["**/*.ts"],
   "references": [
     { "path": "../common" }
   ]
